@@ -69,6 +69,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-搭建博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time class="dt-published" datetime="2024-10-27T10:07:20.886Z" itemprop="datePublished">2024-10-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h1><h2 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h2><h3 id="Node-js和Git安装"><a href="#Node-js和Git安装" class="headerlink" title="Node.js和Git安装"></a>Node.js和Git安装</h3><blockquote>
+<p>搭建之前需要准备的软件：<br>Git：官网下载：<a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a> </p>
+<p>Node.js 官网下载：<a target="_blank" rel="noopener" href="http://nodejs.cn/">http://nodejs.cn/</a></p>
+</blockquote>
+<p>![幕截图 2024-10-27 17434](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 174343.png)![幕截图 2024-10-27 17441](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 174412.png)</p>
+<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>先在合适的为位置创建一个文件夹，鼠标右击选择 <code>Git bash here</code>，依次执行以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ npm install hexo --save</span><br></pre></td></tr></table></figure>
+
+<p>安装后检查，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<!--先将`hexo`文件夹下的文件删除（清空hexo文件夹），不然后面会报以下错误：-->
+
+<p>![幕截图 2024-10-27 17523](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 175238.png)</p>
+<p>再输入命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo g  # 上面的简写方式</span><br><span class="line">$ hexo server</span><br><span class="line">$ hexo s  # 上面的简写方式</span><br></pre></td></tr></table></figure>
+
+<p>![幕截图 2024-10-27 17562](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 175623.png)</p>
+<h2 id="Hexo-部署到-Github"><a href="#Hexo-部署到-Github" class="headerlink" title="Hexo 部署到 Github"></a>Hexo 部署到 <a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=Github&spm=1001.2101.3001.7020">Github</a></h2><h3 id="注册Github-账号"><a href="#注册Github-账号" class="headerlink" title="注册Github 账号"></a>注册Github 账号</h3><p><a target="_blank" rel="noopener" href="https://github.com/">Github官网</a>[^]</p>
+<p>项目名称为：<code>username.github.io</code>,仓库设置为<code>public</code>公开</p>
+<p>![幕截图 2024-10-27 18022](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 180222.png)</p>
+<p>推送代码至 Github：Github 推送代码目前已经不支持账号密码方式，所以需要开启 <code>ssh</code> 密钥直接推送。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;XXXX&quot;                       # 配置个人信息-username</span><br><span class="line">$ git config --global user.email &quot;XXXXXXXXX@XXX.com&quot;         # 配置个人信息-useremail</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;XXXXXXXXX@XXX.com&quot;					 # 生成密钥</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\huawei\AppData\Local\Temp\1730023449057.png" alt="73002344905"></p>
+<h3 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h3><p>打开 hexo 的配置文件 <code>_config.yml</code> 修改 <code>deploy</code> 位置的配置</p>
+<p><strong>注意：目前 Github 的分支已经不是 master 了，而是 main</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: github: git@github.com:XXXXXXX/XXXXXXXX.github.io.git    # 仓库地址</span><br><span class="line">    branch: main    # 分支!!!!!!!!!!是 main</span><br><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<p>此时就可以通过<code>https://username.github.io</code> 进行访问你的博客了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cm2rffl7a0000u0v60iggdebo" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-编码与解码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/10/27/%E7%BC%96%E7%A0%81%E4%B8%8E%E8%A7%A3%E7%A0%81/" class="article-date">
@@ -263,6 +321,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2024/10/27/%E7%BC%96%E7%A0%81%E4%B8%8E%E8%A7%A3%E7%A0%81/">(no title)</a>
