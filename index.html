@@ -71,13 +71,23 @@
   
     <article id="post-搭建博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2024-10-27T10:07:20.886Z" itemprop="datePublished">2024-10-27</time>
+    <a href="/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time class="dt-published" datetime="2024-12-04T04:02:42.000Z" itemprop="datePublished">2024-12-04</time>
 </a>
     
   </div>
   <div class="article-inner">
     
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
+    </h1>
+  
+
+      </header>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
@@ -105,7 +115,8 @@
 <p>推送代码至 Github：Github 推送代码目前已经不支持账号密码方式，所以需要开启 <code>ssh</code> 密钥直接推送。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;XXXX&quot;                       # 配置个人信息-username</span><br><span class="line">$ git config --global user.email &quot;XXXXXXXXX@XXX.com&quot;         # 配置个人信息-useremail</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;XXXXXXXXX@XXX.com&quot;					 # 生成密钥</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\huawei\AppData\Local\Temp\1730023449057.png" alt="73002344905"></p>
+
+
 <h3 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h3><p>打开 hexo 的配置文件 <code>_config.yml</code> 修改 <code>deploy</code> 位置的配置</p>
 <p><strong>注意：目前 Github 的分支已经不是 master 了，而是 main</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: github: git@github.com:XXXXXXX/XXXXXXXX.github.io.git    # 仓库地址</span><br><span class="line">    branch: main    # 分支!!!!!!!!!!是 main</span><br><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
@@ -115,7 +126,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cm2rffl7a0000u0v60iggdebo" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cm2rffl7a0000u0v60iggdebo" data-title="搭建博客" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -127,71 +138,274 @@
 
 
   
-    <article id="post-编码与解码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-控制台命令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/10/27/%E7%BC%96%E7%A0%81%E4%B8%8E%E8%A7%A3%E7%A0%81/" class="article-date">
-  <time class="dt-published" datetime="2024-10-27T08:58:06.859Z" itemprop="datePublished">2024-10-27</time>
+    <a href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time class="dt-published" datetime="2024-11-28T13:24:58.000Z" itemprop="datePublished">2024-11-28</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/">控制台命令</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="编码与解码"><a href="#编码与解码" class="headerlink" title="编码与解码"></a>编码与解码</h1><h2 id="古典密码"><a href="#古典密码" class="headerlink" title="古典密码"></a>古典密码</h2><h3 id="凯撒密码"><a href="#凯撒密码" class="headerlink" title="凯撒密码"></a>凯撒密码</h3><p>明文上的所有字母按照字母表的顺序同时向前或向后移动相同位数，替换成那个位置的字母。</p>
-<h3 id="维吉尼亚密码"><a href="#维吉尼亚密码" class="headerlink" title="维吉尼亚密码"></a>维吉尼亚密码</h3><p>26个英文字母组成一个26*26的表格，其中第一行和第一列包含所有的字母，若密钥的字符数小于密文，将密钥重复以用于对照,以找出明文。</p>
-<blockquote>
-<p>例如，假设明文为：HEETIAN</p>
-<p>  然后选择某一关键词并重复而得到密钥，如关键词为LAB时，密钥为：LABLABL</p>
-<p>  对于明文的第一个字母H，对应密钥的第一个字母L，于是使用表格中L行字母表进行加密，得到密文第一个字母S。<br>  类似地，明文第二个字母为E，在表格中使用对应的A行进行加密，得到密文第二个字母E。以此类推，可以得到：</p>
-<p>  明文：HEETIAN</p>
-<p>  密钥：LABLABL</p>
-<p>  密文：SEFEIBY</p>
-<p>  例如：根据密钥第一个字母L所对应的L行字母表，发现密文第一个字母S位于H列，因而明文第一个字母为H。<br>  密钥第二个字母A对应A行字母表，而密文第二个字母E位于此行E列，因而明文第二个字母为E。以此类推便可得到明文。</p>
-</blockquote>
-<p>![幕截图 2024-10-24 15521](编码与解码.assets&#x2F;屏幕截图 2024-10-24 155214-1730019981718.png)</p>
-<h3 id="栅栏密码"><a href="#栅栏密码" class="headerlink" title="栅栏密码"></a>栅栏密码</h3><p>其属于<strong>移项式密码，</strong></p>
-<blockquote>
-<p>以2栏栅栏密码为例</p>
-<p>设明文为ABCDEFGH</p>
-<p>两个一组：（AB) (CD) (EF) (GH)</p>
-<p>从每组中取出第一个：ACEG</p>
-<p>再取出每组中第二个：BDFH</p>
-<p>连在一起得到密文：ACEGBDFH</p>
-</blockquote>
-<h3 id="培根密码"><a href="#培根密码" class="headerlink" title="培根密码"></a>培根密码</h3><p>表示方式与二进制相似，但用a,b来替代1，0。每个字母用5个由a,b组成的字符串表示</p>
-<p>![幕截图 2024-10-24 16184](编码与解码.assets&#x2F;屏幕截图 2024-10-24 161849.png)</p>
-<p>给一串包含字母大小写的字符，以大写字母代表a,小写字母代表b,得到一串由a,b组成的字符，每5个分一组与上图对照得到明文。</p>
-<p>![幕截图 2024-10-24 16223](编码与解码.assets&#x2F;屏幕截图 2024-10-24 162231-1730020019339.png)</p>
-<h3 id="希尔密码"><a href="#希尔密码" class="headerlink" title="希尔密码"></a>希尔密码</h3><p>其在加密之前需要一张替换表</p>
-<p>假设</p>
-<p>![幕截图 2024-10-24 16312](编码与解码.assets&#x2F;屏幕截图 2024-10-24 163121.png)</p>
-<p>且明文为<em><strong>helloword</strong></em></p>
-<p>密钥为<em><strong>hill</strong></em></p>
-<p>将密钥和明文转换为矩阵形式<a href="%E5%AF%86%E9%92%A5%E6%A8%AA%E5%90%91%E5%A1%AB%E5%85%85%EF%BC%8C%E6%98%8E%E6%96%87%E7%BA%B5%E5%90%91%E5%A1%AB%E5%85%85%E3%80%82%E5%AF%86%E9%92%A5%E9%95%BF%E5%BA%A6%E4%B8%8D%E5%A4%9F%E5%A1%AB%E5%85%85%E7%9F%A9%E9%98%B5%EF%BC%8C%E9%9C%80%E8%A6%81%E7%94%A8%E6%9B%BF%E6%8D%A2%E8%A1%A8%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E6%9D%A5%E8%A1%A5%E8%B6%B3%EF%BC%8C%E8%8B%A5%E5%AF%86%E9%92%A5%E9%95%BF%E5%BA%A6%E8%B6%85%E5%87%BA%E4%BA%86%E7%9F%A9%E9%98%B5%E6%95%B0%E9%87%8F%EF%BC%8C%E6%89%80%E4%BB%A5%E5%8F%AA%E6%88%AA%E5%8F%96%E7%9B%B8%E5%BA%94%E7%9A%84%E9%95%BF%E5%BA%A6%EF%BC%8C%E4%B8%94%E6%98%8E%E6%96%87%E7%9A%84%E7%9F%A9%E9%98%B5%EF%BC%8C%E8%A1%8C%E6%95%B0%E9%9C%80%E5%92%8C%E5%AF%86%E9%92%A5%E7%9F%A9%E9%98%B5%E7%BB%B4%E5%BA%A6%E7%9B%B8%E5%90%8C%E3%80%82">^1</a></p>
-<p>得到明文和密钥的矩阵如下</p>
-<p>![幕截图 2024-10-24 16414](编码与解码.assets&#x2F;屏幕截图 2024-10-24 164147.png)</p>
-<p>![幕截图 2024-10-24 16413](编码与解码.assets&#x2F;屏幕截图 2024-10-24 164139.png)</p>
-<p>将明文矩阵转为数字形式</p>
-<p>![幕截图 2024-10-24 16415](编码与解码.assets&#x2F;屏幕截图 2024-10-24 164158.png)</p>
-<p>之后正式开始加密</p>
-<p>![幕截图 2024-10-24 16421](编码与解码.assets&#x2F;屏幕截图 2024-10-24 164219.png)</p>
-<p>![幕截图 2024-10-24 16423](编码与解码.assets&#x2F;屏幕截图 2024-10-24 164235.png)</p>
-<h2 id="Ascll"><a href="#Ascll" class="headerlink" title="Ascll"></a>Ascll</h2><h3 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h3><p>将给定的字符串根据Ascll标转化成二进制–&gt;每四个一组重新划分–&gt;得到一个新的Ascll数值–&gt;再转化为16进制</p>
-<p>&#x3D;&#x3D;数字0-9和字母A-F&#x3D;&#x3D;</p>
-<p><img src="file:///E:/blogs/heo/source/_posts/%E7%BC%96%E7%A0%81%E4%B8%8E%E8%A7%A3%E7%A0%81.assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-10-24%20165424.png?lastModify=1730019871" alt="img"></p>
-<h3 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h3><p>与base16相似，但分为5个一组，且转化为十进制的数来对应字符。</p>
-<p>但转化后的二级制字符数需要满足40的倍数,不够5的倍数的补0，之后补等号，一个等号相当于5个bit.</p>
-<p>&#x3D;&#x3D;字母A-Z和数字2-7&#x3D;&#x3D;</p>
-<h3 id="幕截图-2024-10-24-17090-编码与解码-assets-屏幕截图-2024-10-24-170909-png"><a href="#幕截图-2024-10-24-17090-编码与解码-assets-屏幕截图-2024-10-24-170909-png" class="headerlink" title="![幕截图 2024-10-24 17090](编码与解码.assets&#x2F;屏幕截图 2024-10-24 170909.png)"></a>![幕截图 2024-10-24 17090](编码与解码.assets&#x2F;屏幕截图 2024-10-24 170909.png)</h3><p>与base32相似,但分为6个一组。</p>
-<p>转化后的二级制字符数需要满足24的倍数,不够6的倍数的补0，之后补等号，一个等号相当于6个bit.</p>
-<p>&#x3D;&#x3D;字母A-Z,小写字母a-z,数字0-9，和+&#x2F;&#x3D;&#x3D;</p>
+        <p>1.sudo  +命令:以超级用户身份执行</p>
+<p>2.subl +文件名:可以直接打开 Sublime Text 编辑器，并指定要编辑的文件或文件夹</p>
+<p><code>   </code></p>
+<p><code>subl myproject/</code>：打开名为 “myproject” 的文件夹。</p>
+<p><code>subl -n main.c</code>：在新的窗口中打开 “main.c” 文件。</p>
+<p><code>subl -r file1.txt:file2.txt</code>：在新的窗口中打开两个文件，并以行的方式对齐显示。</p>
+<p>3.gcc +(-m32)文件名 -o+自己定义的文件名若（没有则默认为a.out)：生成可执行文件</p>
+<p>(-m32)使生成的文件是32 位的</p>
+<p>4.ls -l +文件名：显示文件的部分信息</p>
+<p>   file+文件名</p>
+<ol>
+<li>​    .&#x2F;+文件名：执行该文件</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/27/%E7%BC%96%E7%A0%81%E4%B8%8E%E8%A7%A3%E7%A0%81/" data-id="cm2rdjgpy0001y0v67xi6gl5v" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/" data-id="cm41cel0700018wv628pu83tw" data-title="控制台命令" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-汇编语言" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/11/28/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" class="article-date">
+  <time class="dt-published" datetime="2024-11-28T13:19:12.000Z" itemprop="datePublished">2024-11-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/11/28/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/">汇编语言</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="汇编语言"><a href="#汇编语言" class="headerlink" title="汇编语言"></a>汇编语言</h2><h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><p>告诉处理器执行特定的操作，如加法、减法、跳转等</p>
+<p>数据传送指令:</p>
+<ul>
+<li><code>mov</code>: 将数据从一个位置复制到另一个位置。</li>
+<li><code>push</code>: 将数据压入栈中。</li>
+<li><code>pop</code>: 将栈顶数据弹出。</li>
+</ul>
+<p>算术运算指令:</p>
+<ul>
+<li><code>add</code>: 加法。</li>
+<li><code>sub</code>: 减法。</li>
+<li><code>mul</code>: 乘法。</li>
+<li><code>div</code>: 除法。</li>
+</ul>
+<p>逻辑运算指令:</p>
+<ul>
+<li><code>and</code>: 与运算。</li>
+<li><code>or</code>: 或运算。</li>
+<li><code>xor</code>: 异或运算。</li>
+<li><code>not</code>: 非运算。</li>
+</ul>
+<p>跳转指令:</p>
+<ul>
+<li><code>jmp</code>: 无条件跳转。</li>
+<li><code>je</code>: 若相等则跳转。</li>
+<li><code>jne</code>: 若不相等则跳转。</li>
+<li><code>jg</code>: 若大于则跳转。</li>
+<li><code>jl</code>: 若小于则跳转。</li>
+</ul>
+<p>比较指令:</p>
+<ul>
+<li><code>cmp</code>: 比较两个操作数，并设置标志寄存器。</li>
+</ul>
+<p>栈操作指令:</p>
+<ul>
+<li><code>call</code>: 调用子程序。</li>
+<li><code>ret</code>: 从子程序返回。</li>
+</ul>
+<p>输入输出指令:</p>
+<ul>
+<li><code>in</code>: 从输入设备读取数据。</li>
+<li><code>out</code>: 向输出设备写入数据。</li>
+</ul>
+<h3 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h3><p> 计算机内部的高速存储单元，用于暂时存放数据和指令。</p>
+<p>1.<strong>通用寄存器：</strong></p>
+<p>x86架构（32位）常见寄存器：</p>
+<ul>
+<li><strong>EAX (Accumulator)</strong>: 累加器寄存器，通常用于存放运算结果。在函数调用中，也用作返回值寄存器。</li>
+<li><strong>EBX (Base)</strong>: 基址寄存器，常用于数组操作，存放基地址。</li>
+<li><strong>ECX (Count)</strong>: 计数寄存器，在循环、字符串操作、位移操作等中常用。</li>
+<li><strong>EDX (Data)</strong>: 数据寄存器，通常用于存放除法运算的结果（商或余数）。</li>
+<li><strong>ESI (Source Index)</strong>: 源索引寄存器，常用于字符串操作，指向源数据的地址。</li>
+<li><strong>EDI (Destination Index)</strong>: 目的索引寄存器，常用于字符串操作，指向目标数据的地址。</li>
+<li><strong>EBP (Base Pointer)</strong>: 基指针寄存器，用于访问函数的局部变量和参数（栈帧）。</li>
+<li><strong>ESP (Stack Pointer)</strong>: 栈指针寄存器，指向栈顶，用于管理栈空间。</li>
+</ul>
+<p>x86-64架构（64位）常见寄存器：</p>
+<ul>
+<li><p><strong>RAX</strong>: 64位的累加器寄存器。</p>
+</li>
+<li><p><strong>RBX</strong>: 64位的基址寄存器。</p>
+</li>
+<li><p><strong>RCX</strong>: 64位的计数寄存器。</p>
+</li>
+<li><p><strong>RDX</strong>: 64位的数据寄存器。</p>
+</li>
+<li><p><strong>RSI</strong>: 64位的源索引寄存器。</p>
+</li>
+<li><p><strong>RDI</strong>: 64位的目的索引寄存器。</p>
+</li>
+<li><p><strong>RSP</strong>: 64位的栈指针寄存器。</p>
+</li>
+<li><p><strong>RBP</strong>: 64位的基指针寄存器。</p>
+</li>
+<li><p><strong>R8-R15</strong>: 额外的8个通用寄存器，用于支持64位指令集的扩展。</p>
+<ol>
+<li><strong>指令指针寄存器 (Instruction Pointer, IP &#x2F; EIP &#x2F; RIP)</strong></li>
+</ol>
+<p>指令指针寄存器（在x86架构中为<code>EIP</code>，在x86-64架构中为<code>RIP</code>）用于存储下一条即将执行的指令的地址。每执行一条指令，指令指针会自动更新，指向下一条指令。</p>
+<ol>
+<li><strong>标志寄存器 (Flag Register)</strong></li>
+</ol>
+<p>标志寄存器用于存储CPU的状态信息，通常在执行指令后会设置不同的标志位。它的作用是反映当前CPU的运行状态，如运算结果是否为零、是否发生了溢出等。</p>
+<ul>
+<li><strong>零标志 (ZF)</strong>: 如果运算结果为零，则置位。</li>
+<li><strong>进位标志 (CF)</strong>: 如果发生进位或借位，则置位。</li>
+<li><strong>符号标志 (SF)</strong>: 如果运算结果为负数，则置位。</li>
+<li><strong>溢出标志 (OF)</strong>: 如果运算结果溢出，则置位。</li>
+<li><strong>中断标志 (IF)</strong>: 控制中断是否被启用。</li>
+</ul>
+<ol>
+<li><strong>段寄存器 (Segment Registers)</strong></li>
+</ol>
+<p>段寄存器用于存储内存的段地址。在早期的x86架构中，内存被划分为不同的段（如代码段、数据段、堆栈段等），每个段寄存器指向相应的内存段的起始位置。</p>
+<p>常见的段寄存器有：</p>
+<ul>
+<li><strong>CS (Code Segment)</strong>: 存放当前执行代码的段地址。</li>
+<li><strong>DS (Data Segment)</strong>: 存放数据段的地址。</li>
+<li><strong>SS (Stack Segment)</strong>: 存放栈段的地址。</li>
+<li><strong>ES, FS, GS</strong>: 通常用于存储额外的段地址（如用于指向特定数据结构的地址）。</li>
+</ul>
+<p>在现代的64位架构中，段寄存器的作用已经减少，内存模型转向了平坦内存模型，大多数情况下不再使用段寄存器来访问内存。</p>
+<ol>
+<li><strong>控制寄存器 (Control Registers)</strong></li>
+</ol>
+<p>控制寄存器是处理器的特殊寄存器，用于控制CPU的模式和操作。它们通常与处理器的特权级别、分页、虚拟内存等相关。</p>
+<ul>
+<li><strong>CR0</strong>: 控制寄存器0，控制CPU的操作模式（如是否启用分页）。</li>
+<li><strong>CR3</strong>: 存储页表基址指针。</li>
+<li><strong>CR4</strong>: 启用或禁用一些高级特性，如页级保护、保护模式等。</li>
+</ul>
+<ol>
+<li><strong>调试寄存器 (Debug Registers)</strong></li>
+</ol>
+<p>调试寄存器用于调试目的，帮助监控CPU执行过程中的特定条件，如设置断点、单步执行等。</p>
+<p>常见的调试寄存器：</p>
+<ul>
+<li><strong>DR0-DR7</strong>: 用于设置调试断点和控制调试行为。</li>
+</ul>
+<ol>
+<li><strong>浮点寄存器 (Floating-Point Registers)</strong></li>
+</ol>
+<p>浮点寄存器用于存储浮点数运算的结果，通常在使用浮点单元（FPU）时才会使用。</p>
+<p>在x86架构中，浮点寄存器通常是：</p>
+<ul>
+<li><strong>ST(0)-ST(7)</strong>: 8个浮点寄存器，用于存储浮点数。</li>
+</ul>
+</li>
+</ul>
+<h3 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h3><p> 计算机中的主要存储器，用于存储程序和数据。</p>
+<p><strong>代码段（Code Segment, CS）</strong>: 存储程序的可执行代码。</p>
+<p><strong>数据段（Data Segment, DS）</strong>: 存储程序的数据。</p>
+<p><strong>堆栈段（Stack Segment, SS）</strong>: 存储程序的栈数据。</p>
+<p><strong>附加段（Extra Segment, ES）</strong>: 用于额外的存储空间。</p>
+<h3 id="标号"><a href="#标号" class="headerlink" title="标号"></a>标号</h3><p>** 用于标识代码中的特定位置，方便跳转和调用。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/11/28/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" data-id="cm41cel0800028wv6dyc239w6" data-title="汇编语言" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-C" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/11/28/C/" class="article-date">
+  <time class="dt-published" datetime="2024-11-28T13:11:46.000Z" itemprop="datePublished">2024-11-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/11/28/C/">C++</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h1><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>1.strcpy(s1,s2);复制字符串 s2 到字符串 s1。<br>2.strcat(s1,s2);连接字符串 s2到字符串 s1 的末尾。<br>3.strlen(s1);返回字符串 s1 的长度。<br>4.strcmp(s1, s2); 如果 s1 和 s2 是相同的， 则返回 0; 如果 s1&lt;s2 则返回小于 0; 如果<br>s1&gt;s2 则返回大于 0。<br>5.strchr(s1,ch);返回一个指针，指向字符串s1中字符ch 的第一次出现的位置。<br>6.strstr(s1,s2);返回一个指针，指向字符串s1中字符串s2的第一次出现的位置。</p>
+<h2 id="修改对齐数"><a href="#修改对齐数" class="headerlink" title="修改对齐数"></a>修改对齐数</h2><ol>
+<li><p>第一个成员在与结构体变量偏移量为 0 的地址</p>
+</li>
+<li><p>其他成员变量要对齐到某个数字（对齐数）的整数倍的地址处。对齐数&#x3D;min(编译器默认的一个对<br>齐数,该成员大小)，在 VS 环境下默认值为 8，在Linux 环境下默认值为 4</p>
+</li>
+<li><p>结构体的总大小为最大对齐数（每个成员变量都有一个对齐数）的整数倍</p>
+</li>
+<li><p>如果嵌套了结构体的情况，被嵌套的结构体对齐到其自身对齐数的整数倍处（结构体的对齐数就是<br>其内部成员中最大的对齐数），此时结构体的整体大小就是所有最大对齐数（含被嵌套结构体的对<br>齐数）的整数倍</p>
+<p>pragma.pack()改默认对齐数</p>
+<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2></li>
+</ol>
+<p>int main(int argc, char *argv[]) {<br>    &#x2F;&#x2F; …<br>}</p>
+<p><strong>argc:</strong> 总是至少为1，因为程序名本身也算一个参数。</p>
+<p><strong>argv[0]</strong> 指向程序名。</p>
+<p><strong>argv[1] ~ argv[argc-1]</strong> 指向其他的命令行参数。</p>
+<p>（找到文件，在cmd 后输入其他数组）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/11/28/C/" data-id="cm41cel0500008wv62e8c6yu4" data-title="C++" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -310,7 +524,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
     </div>
   </div>
 
@@ -323,19 +537,23 @@
       <ul>
         
           <li>
-            <a href="/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">(no title)</a>
+            <a href="/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
           </li>
         
           <li>
-            <a href="/2024/10/27/%E7%BC%96%E7%A0%81%E4%B8%8E%E8%A7%A3%E7%A0%81/">(no title)</a>
+            <a href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/">控制台命令</a>
+          </li>
+        
+          <li>
+            <a href="/2024/11/28/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/">汇编语言</a>
+          </li>
+        
+          <li>
+            <a href="/2024/11/28/C/">C++</a>
           </li>
         
           <li>
             <a href="/2024/10/16/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2024/10/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我的博客</a>
           </li>
         
       </ul>

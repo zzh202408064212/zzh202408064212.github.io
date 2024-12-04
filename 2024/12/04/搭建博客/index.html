@@ -4,21 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>搭建博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="搭建博客环境部署Node.js和Git安装 搭建之前需要准备的软件：Git：官网下载：https:&#x2F;&#x2F;git-scm.com&#x2F;  Node.js 官网下载：http:&#x2F;&#x2F;nodejs.cn&#x2F;  ![幕截图 2024-10-27 17434](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 174343.png)![幕截图 2024-10-2">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="搭建博客">
+<meta property="og:url" content="http://example.com/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="搭建博客环境部署Node.js和Git安装 搭建之前需要准备的软件：Git：官网下载：https:&#x2F;&#x2F;git-scm.com&#x2F;  Node.js 官网下载：http:&#x2F;&#x2F;nodejs.cn&#x2F;  ![幕截图 2024-10-27 17434](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 174343.png)![幕截图 2024-10-2">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:\Users\huawei\AppData\Local\Temp\1730023449057.png">
-<meta property="article:published_time" content="2024-10-27T10:07:20.886Z">
-<meta property="article:modified_time" content="2024-10-27T10:07:20.886Z">
+<meta property="article:published_time" content="2024-12-04T04:02:42.000Z">
+<meta property="article:modified_time" content="2024-12-04T04:02:59.871Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:\Users\huawei\AppData\Local\Temp\1730023449057.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -75,13 +73,23 @@
       <div class="outer">
         <section id="main"><article id="post-搭建博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2024-10-27T10:07:20.886Z" itemprop="datePublished">2024-10-27</time>
+    <a href="/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time class="dt-published" datetime="2024-12-04T04:02:42.000Z" itemprop="datePublished">2024-12-04</time>
 </a>
     
   </div>
   <div class="article-inner">
     
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      搭建博客
+    </h1>
+  
+
+      </header>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
@@ -109,7 +117,8 @@
 <p>推送代码至 Github：Github 推送代码目前已经不支持账号密码方式，所以需要开启 <code>ssh</code> 密钥直接推送。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;XXXX&quot;                       # 配置个人信息-username</span><br><span class="line">$ git config --global user.email &quot;XXXXXXXXX@XXX.com&quot;         # 配置个人信息-useremail</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;XXXXXXXXX@XXX.com&quot;					 # 生成密钥</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\huawei\AppData\Local\Temp\1730023449057.png" alt="73002344905"></p>
+
+
 <h3 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h3><p>打开 hexo 的配置文件 <code>_config.yml</code> 修改 <code>deploy</code> 位置的配置</p>
 <p><strong>注意：目前 Github 的分支已经不是 master 了，而是 main</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: github: git@github.com:XXXXXXX/XXXXXXXX.github.io.git    # 仓库地址</span><br><span class="line">    branch: main    # 分支!!!!!!!!!!是 main</span><br><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
@@ -119,7 +128,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cm2rffl7a0000u0v60iggdebo" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cm2rffl7a0000u0v60iggdebo" data-title="搭建博客" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -130,9 +139,9 @@
 <nav id="article-nav">
   
   
-    <a href="/2024/10/27/%E7%BC%96%E7%A0%81%E4%B8%8E%E8%A7%A3%E7%A0%81/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">控制台命令</div>
     </a>
   
 </nav>
@@ -157,7 +166,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
     </div>
   </div>
 
@@ -170,19 +179,23 @@
       <ul>
         
           <li>
-            <a href="/2024/10/27/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">(no title)</a>
+            <a href="/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
           </li>
         
           <li>
-            <a href="/2024/10/27/%E7%BC%96%E7%A0%81%E4%B8%8E%E8%A7%A3%E7%A0%81/">(no title)</a>
+            <a href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/">控制台命令</a>
+          </li>
+        
+          <li>
+            <a href="/2024/11/28/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/">汇编语言</a>
+          </li>
+        
+          <li>
+            <a href="/2024/11/28/C/">C++</a>
           </li>
         
           <li>
             <a href="/2024/10/16/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2024/10/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我的博客</a>
           </li>
         
       </ul>
