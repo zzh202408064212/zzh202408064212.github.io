@@ -4,15 +4,36 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>elf动调+SMC | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="elf动调首先去到ida的安装目录找到dbgsrv文件  在该目录下找到两个文件（分别是32位和64位的，elf文件的话一般都是64位，就用linux_server64示例）  首先将linux_server64和你想要动调的elf文件拖入虚拟机中  直接在桌面右键打开终端，运行这个文件.&#x2F;linux_server64  出现这样的就已经可以了。 接下来回到windows，使用对应版本的IDA打开">
+<meta property="og:type" content="article">
+<meta property="og:title" content="elf动调+SMC">
+<meta property="og:url" content="http://example.com/2024/12/05/elf%E5%8A%A8%E8%B0%83-SMC/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="elf动调首先去到ida的安装目录找到dbgsrv文件  在该目录下找到两个文件（分别是32位和64位的，elf文件的话一般都是64位，就用linux_server64示例）  首先将linux_server64和你想要动调的elf文件拖入虚拟机中  直接在桌面右键打开终端，运行这个文件.&#x2F;linux_server64  出现这样的就已经可以了。 接下来回到windows，使用对应版本的IDA打开">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412052337213.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412052343458.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412052352434.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412060007772.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412060010819.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412060015268.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061206214.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061209205.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061228489.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061656405.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061240990.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061636078.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061637804.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061717370.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061719722.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061719041.png">
+<meta property="article:published_time" content="2024-12-05T15:35:06.000Z">
+<meta property="article:modified_time" content="2024-12-06T09:21:50.123Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412052337213.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -67,9 +88,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-elf动调-SMC" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-elf动调-SMC" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/12/05/elf%E5%8A%A8%E8%B0%83-SMC/" class="article-date">
   <time class="dt-published" datetime="2024-12-05T15:35:06.000Z" itemprop="datePublished">2024-12-05</time>
@@ -82,8 +101,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/12/05/elf%E5%8A%A8%E8%B0%83-SMC/">elf动调+SMC</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      elf动调+SMC
     </h1>
   
 
@@ -174,220 +193,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-搭建博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2024-12-04T04:02:42.000Z" itemprop="datePublished">2024-12-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
-    </h1>
+    <a href="/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">搭建博客</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h1><h2 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h2><h3 id="Node-js和Git安装"><a href="#Node-js和Git安装" class="headerlink" title="Node.js和Git安装"></a>Node.js和Git安装</h3><blockquote>
-<p>搭建之前需要准备的软件：<br>Git：官网下载：<a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a> </p>
-<p>Node.js 官网下载：<a target="_blank" rel="noopener" href="http://nodejs.cn/">http://nodejs.cn/</a></p>
-</blockquote>
-<p>![幕截图 2024-10-27 17434](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 174343.png)![幕截图 2024-10-27 17441](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 174412.png)</p>
-<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>先在合适的为位置创建一个文件夹，鼠标右击选择 <code>Git bash here</code>，依次执行以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ npm install hexo --save</span><br></pre></td></tr></table></figure>
-
-<p>安装后检查，输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<!--先将`hexo`文件夹下的文件删除（清空hexo文件夹），不然后面会报以下错误：-->
-
-<p>![幕截图 2024-10-27 17523](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 175238.png)</p>
-<p>再输入命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo g  # 上面的简写方式</span><br><span class="line">$ hexo server</span><br><span class="line">$ hexo s  # 上面的简写方式</span><br></pre></td></tr></table></figure>
-
-<p>![幕截图 2024-10-27 17562](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 175623.png)</p>
-<h2 id="Hexo-部署到-Github"><a href="#Hexo-部署到-Github" class="headerlink" title="Hexo 部署到 Github"></a>Hexo 部署到 <a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=Github&spm=1001.2101.3001.7020">Github</a></h2><h3 id="注册Github-账号"><a href="#注册Github-账号" class="headerlink" title="注册Github 账号"></a>注册Github 账号</h3><p><a target="_blank" rel="noopener" href="https://github.com/">Github官网</a>[^]</p>
-<p>项目名称为：<code>username.github.io</code>,仓库设置为<code>public</code>公开</p>
-<p>![幕截图 2024-10-27 18022](C:\Users\huawei\Pictures\Screenshots\屏幕截图 2024-10-27 180222.png)</p>
-<p>推送代码至 Github：Github 推送代码目前已经不支持账号密码方式，所以需要开启 <code>ssh</code> 密钥直接推送。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;XXXX&quot;                       # 配置个人信息-username</span><br><span class="line">$ git config --global user.email &quot;XXXXXXXXX@XXX.com&quot;         # 配置个人信息-useremail</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;XXXXXXXXX@XXX.com&quot;					 # 生成密钥</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h3><p>打开 hexo 的配置文件 <code>_config.yml</code> 修改 <code>deploy</code> 位置的配置</p>
-<p><strong>注意：目前 Github 的分支已经不是 master 了，而是 main</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: github: git@github.com:XXXXXXX/XXXXXXXX.github.io.git    # 仓库地址</span><br><span class="line">    branch: main    # 分支!!!!!!!!!!是 main</span><br><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-
-<p>此时就可以通过<code>https://username.github.io</code> 进行访问你的博客了</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/12/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cm2rffl7a0000u0v60iggdebo" data-title="搭建博客" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-控制台命令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/" class="article-date">
-  <time class="dt-published" datetime="2024-11-28T13:24:58.000Z" itemprop="datePublished">2024-11-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/">控制台命令</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.sudo  +命令:以超级用户身份执行</p>
-<p>2.subl +文件名:可以直接打开 Sublime Text 编辑器，并指定要编辑的文件或文件夹</p>
-<p><code>   </code></p>
-<p><code>subl myproject/</code>：打开名为 “myproject” 的文件夹。</p>
-<p><code>subl -n main.c</code>：在新的窗口中打开 “main.c” 文件。</p>
-<p><code>subl -r file1.txt:file2.txt</code>：在新的窗口中打开两个文件，并以行的方式对齐显示。</p>
-<p>3.gcc +(-m32)文件名 -o+自己定义的文件名若（没有则默认为a.out)：生成可执行文件</p>
-<p>(-m32)使生成的文件是32 位的</p>
-<p>4.ls -l +文件名：显示文件的部分信息</p>
-<p>   file+文件名</p>
-<ol>
-<li>​    .&#x2F;+文件名：执行该文件</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/" data-id="cm41cel0700018wv628pu83tw" data-title="控制台命令" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/16/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2024-10-16T12:34:22.673Z" itemprop="datePublished">2024-10-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/16/hello-world/" data-id="cm2j26ud50000mwv6cwrldwtn" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-我的博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2024-10-11T12:38:43.000Z" itemprop="datePublished">2024-10-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我的博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="我太想进步了"><a href="#我太想进步了" class="headerlink" title="我太想进步了"></a>我太想进步了</h1><h2 id="学长学姐带我打ctf"><a href="#学长学姐带我打ctf" class="headerlink" title="学长学姐带我打ctf"></a>学长学姐带我打ctf</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" data-id="cm2rdjgpw0000y0v63cwdd1zb" data-title="我的博客" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
