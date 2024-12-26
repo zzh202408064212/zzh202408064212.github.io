@@ -8,13 +8,13 @@
   <meta name="google-site-verification" content="" />
   <meta name="referrer" content="unsafe-url">
   
-  <title>Hexo</title>
+  <title>花指令</title>
   <meta name="author" content="John Doe">
   <meta name="description" content="定义在真实代码中插入一些垃圾代码的同时保证原有程序的正确执行, 而程序无法很好地反编译,使我们难以理解程序内容。
 原理&amp;#x3D;&amp;#x3D;线性反编译&amp;#x3D;&amp;#x3D;(理解花指令的重点)反编译器的工作原理是，从exe的入口AddressOfEntryPoint处开始，依序扫描字节码，并转换">
   
   
-  
+  <meta property="og:title" content="花指令"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:site_name" content="Hexo"/>
   <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
@@ -44,19 +44,19 @@
       
   
     <h1 class="page-title center">
-        
+        花指令
     </h1>
   
 
 
     </div>
     <div class="meta center">
-      <time datetime="2024-12-12T10:52:59.000Z" itemprop="datePublished">
+      <time datetime="2024-12-26T13:46:56.000Z" itemprop="datePublished">
   <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
   </svg>
   &nbsp;
-  2024-12-12
+  2024-12-26
 </time>
 
 
@@ -67,14 +67,12 @@
     </div>
     <hr>
     
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-text">定义</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-text">原理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B1%87%E7%BC%96%E8%B7%B3%E8%BD%AC%E5%88%A4%E6%96%AD"><span class="toc-text">汇编跳转判断</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%B3%E8%BD%AC%E6%8C%87%E4%BB%A4%EF%BC%9A-%E6%A0%B9%E6%8D%AE%E6%AF%94%E8%BE%83%E7%BB%93%E6%9E%9C%E8%AE%BE%E7%BD%AE%E7%9A%84%E6%A0%87%E5%BF%97%E4%BD%8D%EF%BC%8C%E5%86%B3%E5%AE%9A%E6%98%AF%E5%90%A6%E8%B7%B3%E8%BD%AC%E5%88%B0%E6%8C%87%E5%AE%9A%E7%9A%84%E5%9C%B0%E5%9D%80%E3%80%82-%E5%B8%B8%E8%A7%81%E7%9A%84%E8%B7%B3%E8%BD%AC%E6%8C%87%E4%BB%A4%E6%9C%89%EF%BC%9A-je%EF%BC%9A%E5%A6%82%E6%9E%9C%E7%9B%B8%E7%AD%89%E5%88%99%E8%B7%B3%E8%BD%AC-jne%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%8D%E7%9B%B8%E7%AD%89%E5%88%99%E8%B7%B3%E8%BD%AC-jg%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%A4%A7%E4%BA%8E%E5%88%99%E8%B7%B3%E8%BD%AC-jl%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%B0%8F%E4%BA%8E%E5%88%99%E8%B7%B3%E8%BD%AC-jge%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%A4%A7%E4%BA%8E%E7%AD%89%E4%BA%8E%E5%88%99%E8%B7%B3%E8%BD%AC-jle%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%B0%8F%E4%BA%8E%E7%AD%89%E4%BA%8E%E5%88%99%E8%B7%B3%E8%BD%AC"><span class="toc-text">跳转指令：- 根据比较结果设置的标志位，决定是否跳转到指定的地址。- 常见的跳转指令有：  - je：如果相等则跳转  - jne：如果不相等则跳转  - jg：如果大于则跳转  - jl：如果小于则跳转  - jge：如果大于等于则跳转  - jle：如果小于等于则跳转</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B"><span class="toc-text">类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%B8%E6%81%92%E8%B7%B3%E8%BD%AC"><span class="toc-text">永恒跳转</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jz-jnz"><span class="toc-text">jz+jnz</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC"><span class="toc-text">脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3"><span class="toc-text">3.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-text">定义</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-text">原理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B1%87%E7%BC%96%E8%B7%B3%E8%BD%AC%E5%88%A4%E6%96%AD"><span class="toc-text">汇编跳转判断</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B"><span class="toc-text">类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%B8%E6%81%92%E8%B7%B3%E8%BD%AC"><span class="toc-text">永恒跳转</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jz-jnz"><span class="toc-text">jz+jnz</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC"><span class="toc-text">脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3"><span class="toc-text">3.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li></ol></li></ol>
     
     <div class="picture-container">
       
     </div>
-    <hr>
-<hr>
-<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>在真实代码中插入一些垃圾代码的同时保证原有程序的正确执行, 而程序无法很好地反编译,使我们难以理解程序内容。</p>
+    <h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>在真实代码中插入一些垃圾代码的同时保证原有程序的正确执行, 而程序无法很好地反编译,使我们难以理解程序内容。</p>
 <h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>&#x3D;&#x3D;线性反编译&#x3D;&#x3D;(理解花指令的重点)<br>反编译器的工作原理是，从exe的入口AddressOfEntryPoint处开始，依序扫描字节码，并转换为汇编。</p>
 <p>比如第一个16进制字节码是0xE8，一般0xE8代表汇编里的CALL指令，且后面跟着的4个字节数据跟地址有关，那么反编译器就读取这一共5个字节，反编译为CALL 0x地址 。</p>
 <p>对应的，有些字节码只需要一个字节就可以反编译为一条指令，例如0x55对应的是push ebp，这条语句每个函数开始都会有。同样，有些字节码又需要两个、三个、四个字节来反编译为一条指令。</p>
@@ -84,14 +82,18 @@
 <p>2.递归下降算法<br>递归下降采取另外一种不同的方法来定位指令。递归下降算法强调控制流的概念。控制流根据一条指令是否被另一条指令引用来决定是否对其进行反汇编，遇到非控制转移指令时顺序进行反汇编，而遇到控制转移指令时则从转移地址处开始进行反汇编。通过构造必然条件或者互补条件，使得反汇编出错。</p>
 <p>特点：递归下降分析当遇到分支指令时，会递归进入分支进行反汇编。</p>
 <h1 id="汇编跳转判断"><a href="#汇编跳转判断" class="headerlink" title="汇编跳转判断"></a>汇编跳转判断</h1><p>汇编语言中，条件判断主要通过比较指令（如 <code>cmp</code>）和跳转指令（如 <code>je</code>、<code>jne</code>、<code>jg</code>、<code>jl</code> 等）来实现。</p>
-<ul>
-<li><strong>比较指令（cmp）</strong>：<ul>
-<li>将两个操作数进行比较，并设置相应的标志位（如零标志位、符号标志位、进位标志位等）。</li>
-<li>常见的形式为 <code>cmp 操作数1, 操作数2</code>。</li>
-</ul>
-</li>
-<li><h2 id="跳转指令：-根据比较结果设置的标志位，决定是否跳转到指定的地址。-常见的跳转指令有：-je：如果相等则跳转-jne：如果不相等则跳转-jg：如果大于则跳转-jl：如果小于则跳转-jge：如果大于等于则跳转-jle：如果小于等于则跳转"><a href="#跳转指令：-根据比较结果设置的标志位，决定是否跳转到指定的地址。-常见的跳转指令有：-je：如果相等则跳转-jne：如果不相等则跳转-jg：如果大于则跳转-jl：如果小于则跳转-jge：如果大于等于则跳转-jle：如果小于等于则跳转" class="headerlink" title="跳转指令：- 根据比较结果设置的标志位，决定是否跳转到指定的地址。- 常见的跳转指令有：  - je：如果相等则跳转  - jne：如果不相等则跳转  - jg：如果大于则跳转  - jl：如果小于则跳转  - jge：如果大于等于则跳转  - jle：如果小于等于则跳转"></a><strong>跳转指令</strong>：<br>- 根据比较结果设置的标志位，决定是否跳转到指定的地址。<br>- 常见的跳转指令有：<br>  - <code>je</code>：如果相等则跳转<br>  - <code>jne</code>：如果不相等则跳转<br>  - <code>jg</code>：如果大于则跳转<br>  - <code>jl</code>：如果小于则跳转<br>  - <code>jge</code>：如果大于等于则跳转<br>  - <code>jle</code>：如果小于等于则跳转</h2></li>
-</ul>
+<p><strong>比较指令（cmp）</strong>：</p>
+<p>将两个操作数进行比较，并设置相应的标志位（如零标志位、符号标志位、进位标志位等）。</p>
+<p>常见的形式为 <code>cmp 操作数1, 操作数2</code>。</p>
+<p><strong>跳转指令</strong>：</p>
+<p>根据比较结果设置的标志位，决定是否跳转到指定的地址。</p>
+<p>常见的跳转指令有：</p>
+<p><code>je</code>：如果相等则跳转</p>
+<p><code>jne</code>：如果不相等则跳转</p>
+<p><code>jg</code>：如果大于则跳转</p>
+<p><code>jl</code>：如果小于则跳转</p>
+<p><code>jge</code>：如果大于等于则跳转</p>
+<p><code>jle</code>：如果小于等于则跳转</p>
 <h1 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h1><h2 id="永恒跳转"><a href="#永恒跳转" class="headerlink" title="永恒跳转"></a>永恒跳转</h2><p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412261842701.png" alt="image-20241226184225575"></p>
 <p>U解构0x0040102E</p>
 <p>右键NOP 0x0040102E</p>
