@@ -1,649 +1,441 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
   <meta charset="utf-8">
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  <meta name="referrer" content="unsafe-url">
   
   <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
+  <meta name="author" content="John Doe">
   
   
   
-<link rel="stylesheet" href="/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="Hexo"/>
+  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <nav class="navbar">
+  <div class="nav-container">
+  <div class="nav navbar-nav navbar-left">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">XXX</a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+    
+
+  </div>
+  <div id="site_search" class="">
+  <input type="text" id="local-search-input" placeholder="search"/>
+</div>
+
+
+
+  <div class="nav navbar-nav navbar-right">
+    <div class="dropdown">
+      <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <svg class="i-link" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M18 8 C18 8 24 2 27 5 30 8 29 12 24 16 19 20 16 21 14 17 M14 24 C14 24 8 30 5 27 2 24 3 20 8 16 13 12 16 11 18 15"></path>
+        </svg>
+      </a>
+      <base href="/">
+      <ul class="dropdown-content">
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+          <div>
+            <a href="/links.html">
+        links
+      </a>
     </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-花指令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/12/12/%E8%8A%B1%E6%8C%87%E4%BB%A4/" class="article-date">
-  <time class="dt-published" datetime="2024-12-12T10:52:59.000Z" itemprop="datePublished">2024-12-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
-<hr>
-<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>在真实代码中插入一些垃圾代码的同时保证原有程序的正确执行, 而程序无法很好地反编译,使我们难以理解程序内容。</p>
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>&#x3D;&#x3D;线性反编译&#x3D;&#x3D;(理解花指令的重点)<br>反编译器的工作原理是，从exe的入口AddressOfEntryPoint处开始，依序扫描字节码，并转换为汇编。</p>
-<p>比如第一个16进制字节码是0xE8，一般0xE8代表汇编里的CALL指令，且后面跟着的4个字节数据跟地址有关，那么反编译器就读取这一共5个字节，反编译为CALL 0x地址 。</p>
-<p>对应的，有些字节码只需要一个字节就可以反编译为一条指令，例如0x55对应的是push ebp，这条语句每个函数开始都会有。同样，有些字节码又需要两个、三个、四个字节来反编译为一条指令。</p>
-<p>也就是说，如果中间只要一个地方反编译出错，例如两条汇编指令中间突然多了一个字节0xE8，那反编译器就会将其跟着的4个字节处理为CALL指令地址相关数据给反编译成一条CALL 0x地址指令。但实际上0xE8后面的四个字节是单独的字节码指令。这大概就是线性反编译。</p>
-<p>&#x3D;&#x3D;线性扫描和递归下降&#x3D;&#x3D;<br>1.线性扫描算法<br>线性扫描算法p1从程序的入口点开始反汇编，然后对整个代码段进行扫描，反汇编扫描过程中所遇到的每条指令。线性扫描算法的缺点在于在冯诺依曼体系结构下，无法区分数据与代码，从而导致将代码段中嵌入的数据误解释为指令的操作码，以致最后得到错误的反汇编结果。</p>
-<p>特点：从入口开始，一次解析每一条指令，遇到分支指令不会递归进入分支。</p>
-<p>2.递归下降算法<br>递归下降采取另外一种不同的方法来定位指令。递归下降算法强调控制流的概念。控制流根据一条指令是否被另一条指令引用来决定是否对其进行反汇编，遇到非控制转移指令时顺序进行反汇编，而遇到控制转移指令时则从转移地址处开始进行反汇编。通过构造必然条件或者互补条件，使得反汇编出错。</p>
-<p>特点：递归下降分析当遇到分支指令时，会递归进入分支进行反汇编。</p>
-<h1 id="汇编跳转判断"><a href="#汇编跳转判断" class="headerlink" title="汇编跳转判断"></a>汇编跳转判断</h1><p>汇编语言中，条件判断主要通过比较指令（如 <code>cmp</code>）和跳转指令（如 <code>je</code>、<code>jne</code>、<code>jg</code>、<code>jl</code> 等）来实现。</p>
-<ul>
-<li><strong>比较指令（cmp）</strong>：<ul>
-<li>将两个操作数进行比较，并设置相应的标志位（如零标志位、符号标志位、进位标志位等）。</li>
-<li>常见的形式为 <code>cmp 操作数1, 操作数2</code>。</li>
-</ul>
-</li>
-<li><h2 id="跳转指令：-根据比较结果设置的标志位，决定是否跳转到指定的地址。-常见的跳转指令有：-je：如果相等则跳转-jne：如果不相等则跳转-jg：如果大于则跳转-jl：如果小于则跳转-jge：如果大于等于则跳转-jle：如果小于等于则跳转"><a href="#跳转指令：-根据比较结果设置的标志位，决定是否跳转到指定的地址。-常见的跳转指令有：-je：如果相等则跳转-jne：如果不相等则跳转-jg：如果大于则跳转-jl：如果小于则跳转-jge：如果大于等于则跳转-jle：如果小于等于则跳转" class="headerlink" title="跳转指令：- 根据比较结果设置的标志位，决定是否跳转到指定的地址。- 常见的跳转指令有：  - je：如果相等则跳转  - jne：如果不相等则跳转  - jg：如果大于则跳转  - jl：如果小于则跳转  - jge：如果大于等于则跳转  - jle：如果小于等于则跳转"></a><strong>跳转指令</strong>：<br>- 根据比较结果设置的标志位，决定是否跳转到指定的地址。<br>- 常见的跳转指令有：<br>  - <code>je</code>：如果相等则跳转<br>  - <code>jne</code>：如果不相等则跳转<br>  - <code>jg</code>：如果大于则跳转<br>  - <code>jl</code>：如果小于则跳转<br>  - <code>jge</code>：如果大于等于则跳转<br>  - <code>jle</code>：如果小于等于则跳转</h2></li>
-</ul>
-<h1 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h1><h2 id="永恒跳转"><a href="#永恒跳转" class="headerlink" title="永恒跳转"></a>永恒跳转</h2><p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412261842701.png" alt="image-20241226184225575"></p>
-<p>U解构0x0040102E</p>
-<p>右键NOP 0x0040102E</p>
-<p>C 转代码！！！</p>
-<p>函数头P 重构</p>
-<p><a target="_blank" rel="noopener" href="https://buuoj.cn/challenges#[HDCTF2019]Maze">Maze</a></p>
-<h2 id="jz-jnz"><a href="#jz-jnz" class="headerlink" title="jz+jnz"></a>jz+jnz</h2><p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412261913336.png" alt="image-20241226191315230"></p>
-<p><a target="_blank" rel="noopener" href="https://www.nssctf.cn/problem/4525">Junk Code</a></p>
-<h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><p>Options&gt;General&gt;Stack pointer:把汇编命令的十六进制数调出来</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412262023012.png" alt="image-20241226202309954"> </p>
-<p>很明显，在EB 和EF 的指令后ida 识别失败</p>
-<p>套用脚本</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412262043376.png" alt="image-20241226204356272"></p>
-<p><a target="_blank" rel="noopener" href="https://www.nssctf.cn/problem/880">wordy</a></p>
-<h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412082124188.png" alt="image-20241208212437146"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412082125587.png" alt="image-20241208212509466"></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
-      
+     
+          <div>
+            <a target="_blank" rel="noopener" href="https://github.com/XXX/">
+        Github
+      </a>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/12/12/%E8%8A%B1%E6%8C%87%E4%BB%A4/" data-id="cm55bqibp0002b8v68t01ei8s" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-PYC" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/12/10/PYC/" class="article-date">
-  <time class="dt-published" datetime="2024-12-10T08:21:52.000Z" itemprop="datePublished">2024-12-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/12/10/PYC/">PYC</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="生成PYC文件"><a href="#生成PYC文件" class="headerlink" title="生成PYC文件"></a>生成PYC文件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from py_compile import *</span><br><span class="line">compile(&quot;zaho .py&quot;)</span><br></pre></td></tr></table></figure>
-
-<p>zaho .py为文件名</p>
-
-      
+     
+          <div>
+            <a href="/rss2.xml">
+        rss
+      </a>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/12/10/PYC/" data-id="cm55bqibm0000b8v6ghrb0i4l" data-title="PYC" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-加密方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/12/09/%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/" class="article-date">
-  <time class="dt-published" datetime="2024-12-09T08:45:30.000Z" itemprop="datePublished">2024-12-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/12/09/%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/">加密方法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Base"><a href="#Base" class="headerlink" title="Base"></a>Base</h1><h3 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h3><p>将给定的字符串根据Ascll标转化成二进制–&gt;每四个一组重新划分–&gt;得到一个新的Ascll数值–&gt;再转化为16进制</p>
-<p>&#x3D;&#x3D;数字0-9和字母A-F&#x3D;&#x3D;</p>
-<p>编码结束的结果要是2的倍数</p>
-<p>![img](C:&#x2F;Users&#x2F;huawei&#x2F;Pictures&#x2F;Screenshots&#x2F;屏幕截图 2024-10-24 165424.png)</p>
-<h3 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h3><p>与base16相似，但分为5个一组，且转化为十进制的数来对应字符。</p>
-<p>但转化后的二级制字符数需要满足40的倍数,不够5的倍数的补0，之后补等号，一个等号相当于5个bit.</p>
-<p>&#x3D;&#x3D;字母A-Z和数字2-7&#x3D;&#x3D;</p>
-<p>编码结束的结果要是5的倍数</p>
-<h3 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h3><p>与base32相似,但分为6个一组。</p>
-<p>转化后的二级制字符数需要满足24的倍数,不够6的倍数的补0，之后补等号，一个等号相当于6个bit.</p>
-<p>&#x3D;&#x3D;字母A-Z,小写字母a-z,数字0-9，和+&#x2F;&#x3D;&#x3D;</p>
-<p>编码结束的结果要是4的倍数</p>
-<p>特征</p>
-<p>1.除4乘3 or除3乘4</p>
-<p>2.算法里存在赋值&#x3D;（61）</p>
-<p>3.有一个字符串</p>
-<p>例题</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412191939804.png" alt="image-20241219193948732"></p>
-<p>这里的&#x3D;相当于空格，不够4的倍数凑的，所以 其有效的对照表只有63个，且和标准的表相似，所以直接标准base64解</p>
-<p>下图为一段base64解码的代码</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412211210844.png" alt="image-20241221121034790"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412181504920.png" alt="image-20241218150435838"></p>
-<h3 id="Base58"><a href="#Base58" class="headerlink" title="Base58"></a>Base58</h3><p>&#x3D;&#x3D;123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz 和Base64相比，少了0、O、I、l、+ 和 &#x2F; 等容易混淆的字符&#x3D;&#x3D;</p>
-<p>特征</p>
-<p>编码表长度为58<br>有除以58和对58取模的运算<br>乘138除100    </p>
-<h1 id="RC4"><a href="#RC4" class="headerlink" title="RC4"></a>RC4</h1><p>S盒初始化</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">for i from 0 to 255</span><br><span class="line">S[i] :=i</span><br><span class="line">endfor</span><br><span class="line">j:=0</span><br><span class="line">for i from 0to 255</span><br><span class="line">j:=（j+ s[i] +KEY[i mod key_len]）%256</span><br><span class="line">swap(s[i],s[j])</span><br><span class="line">endfor</span><br></pre></td></tr></table></figure>
-
-<p>看到数组，并赋值为0-255</p>
-<p>密钥流生成</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">for i from θ to 255</span><br><span class="line">S[i] := i</span><br><span class="line">endfor</span><br><span class="line">KEY := &quot;123456&quot;</span><br><span class="line">j := 0</span><br><span class="line">for i from 0 to 255</span><br><span class="line">j := (j + s[i] + kEY[i % 6]) mod 256</span><br><span class="line">swap(s[i], s[j])</span><br><span class="line">endfor</span><br></pre></td></tr></table></figure>
-
-<p>加密</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for i from 0 to plain_len</span><br><span class="line">plain[i]^= stream[i]</span><br><span class="line">endfor</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h3><ul>
-<li><ol>
-<li>有很多取模操作</li>
-</ol>
-</li>
-<li><ol>
-<li>有很多256</li>
-</ol>
-</li>
-<li><ol>
-<li>有多个次数为256的循环</li>
-</ol>
-</li>
-<li><ol>
-<li>最后操作为异或</li>
-</ol>
-</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412211835984.png" alt="image-20241221183550936"></p>
-<h1 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;memory.h&gt;</span><br><span class="line">#include &quot;md5.h&quot;</span><br><span class="line"> </span><br><span class="line">unsigned char PADDING[] = &#123;0x80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,</span><br><span class="line">                         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,</span><br><span class="line">                         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,</span><br><span class="line">                         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0&#125;;</span><br><span class="line"> </span><br><span class="line">void MD5Init(MD5_CTX* context)</span><br><span class="line">&#123;</span><br><span class="line">    context-&gt;count[0] = 0;</span><br><span class="line">    context-&gt;count[1] = 0;</span><br><span class="line">    context-&gt;state[0] = 0x67452301;</span><br><span class="line">    context-&gt;state[1] = 0xEFCDAB89;</span><br><span class="line">    context-&gt;state[2] = 0x98BADCFE;</span><br><span class="line">    context-&gt;state[3] = 0x10325476;</span><br><span class="line">&#125;</span><br><span class="line">void MD5Update(MD5_CTX* context, unsigned char* input, unsigned int inputlen)</span><br><span class="line">&#123;</span><br><span class="line">    unsigned int i = 0, index = 0, partlen = 0;</span><br><span class="line">    index = (context-&gt;count[0] &gt;&gt; 3) &amp; 0x3F;</span><br><span class="line">    partlen = 64 - index;</span><br><span class="line">    context-&gt;count[0] += inputlen &lt;&lt; 3;</span><br><span class="line">    if(context-&gt;count[0] &lt; (inputlen &lt;&lt; 3))</span><br><span class="line">        context-&gt;count[1]++;</span><br><span class="line">    context-&gt;count[1] += inputlen &gt;&gt; 29;</span><br><span class="line"> </span><br><span class="line">    if(inputlen &gt;= partlen)</span><br><span class="line">    &#123;</span><br><span class="line">        memcpy(&amp;context-&gt;buffer[index], input, partlen);</span><br><span class="line">        MD5Transform(context-&gt;state, context-&gt;buffer);</span><br><span class="line">        for(i = partlen; i + 64 &lt;= inputlen; i += 64)</span><br><span class="line">            MD5Transform(context-&gt;state, &amp;input[i]);</span><br><span class="line">        index = 0;</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        i = 0;</span><br><span class="line">    &#125;</span><br><span class="line">    memcpy(&amp;context-&gt;buffer[index], &amp;input[i], inputlen - i);</span><br><span class="line">&#125;</span><br><span class="line">void MD5Final(MD5_CTX* context, unsigned char digest[16])</span><br><span class="line">&#123;</span><br><span class="line">    unsigned int index = 0, padlen = 0;</span><br><span class="line">    unsigned char bits[8];</span><br><span class="line">    index = (context-&gt;count[0] &gt;&gt; 3) &amp; 0x3F;</span><br><span class="line">    padlen = (index &lt; 56) ? (56 - index) : (120 - index);</span><br><span class="line">    MD5Encode(bits, context-&gt;count, 8);</span><br><span class="line">    MD5Update(context, PADDING, padlen);</span><br><span class="line">    MD5Update(context, bits, 8);</span><br><span class="line">    MD5Encode(digest, context-&gt;state, 16);</span><br><span class="line">&#125;</span><br><span class="line">void MD5Encode(unsigned char* output, unsigned int* input, unsigned int len)</span><br><span class="line">&#123;</span><br><span class="line">    unsigned int i = 0, j = 0;</span><br><span class="line">    while(j &lt; len)</span><br><span class="line">    &#123;</span><br><span class="line">        output[j] = input[i] &amp; 0xFF;</span><br><span class="line">        output[j + 1] = (input[i] &gt;&gt; 8) &amp; 0xFF;</span><br><span class="line">        output[j + 2] = (input[i] &gt;&gt; 16) &amp; 0xFF;</span><br><span class="line">        output[j + 3] = (input[i] &gt;&gt; 24) &amp; 0xFF;</span><br><span class="line">        i++;</span><br><span class="line">        j += 4;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">void MD5Decode(unsigned int* output, unsigned char* input, unsigned int len)</span><br><span class="line">&#123;</span><br><span class="line">    unsigned int i = 0, j = 0;</span><br><span class="line">    while(j &lt; len)</span><br><span class="line">    &#123;</span><br><span class="line">        output[i] = (input[j]) |</span><br><span class="line">            (input[j + 1] &lt;&lt; 8) |</span><br><span class="line">            (input[j + 2] &lt;&lt; 16) |</span><br><span class="line">            (input[j + 3] &lt;&lt; 24);</span><br><span class="line">        i++;</span><br><span class="line">        j += 4;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">void MD5Transform(unsigned int state[4], unsigned char block[64])</span><br><span class="line">&#123;</span><br><span class="line">    unsigned int a = state[0];</span><br><span class="line">    unsigned int b = state[1];</span><br><span class="line">    unsigned int c = state[2];</span><br><span class="line">    unsigned int d = state[3];</span><br><span class="line">    unsigned int x[64];</span><br><span class="line">    MD5Decode(x, block, 64);</span><br><span class="line">    FF(a, b, c, d, x[0], 7, 0xd76aa478); /* 1 */</span><br><span class="line">    FF(d, a, b, c, x[1], 12, 0xe8c7b756); /* 2 */</span><br><span class="line">    FF(c, d, a, b, x[2], 17, 0x242070db); /* 3 */</span><br><span class="line">    FF(b, c, d, a, x[3], 22, 0xc1bdceee); /* 4 */</span><br><span class="line">    FF(a, b, c, d, x[4], 7, 0xf57c0faf); /* 5 */</span><br><span class="line">    FF(d, a, b, c, x[5], 12, 0x4787c62a); /* 6 */</span><br><span class="line">    FF(c, d, a, b, x[6], 17, 0xa8304613); /* 7 */</span><br><span class="line">    FF(b, c, d, a, x[7], 22, 0xfd469501); /* 8 */</span><br><span class="line">    FF(a, b, c, d, x[8], 7, 0x698098d8); /* 9 */</span><br><span class="line">    FF(d, a, b, c, x[9], 12, 0x8b44f7af); /* 10 */</span><br><span class="line">    FF(c, d, a, b, x[10], 17, 0xffff5bb1); /* 11 */</span><br><span class="line">    FF(b, c, d, a, x[11], 22, 0x895cd7be); /* 12 */</span><br><span class="line">    FF(a, b, c, d, x[12], 7, 0x6b901122); /* 13 */</span><br><span class="line">    FF(d, a, b, c, x[13], 12, 0xfd987193); /* 14 */</span><br><span class="line">    FF(c, d, a, b, x[14], 17, 0xa679438e); /* 15 */</span><br><span class="line">    FF(b, c, d, a, x[15], 22, 0x49b40821); /* 16 */</span><br><span class="line"> </span><br><span class="line">    /* Round 2 */</span><br><span class="line">    GG(a, b, c, d, x[1], 5, 0xf61e2562); /* 17 */</span><br><span class="line">    GG(d, a, b, c, x[6], 9, 0xc040b340); /* 18 */</span><br><span class="line">    GG(c, d, a, b, x[11], 14, 0x265e5a51); /* 19 */</span><br><span class="line">    GG(b, c, d, a, x[0], 20, 0xe9b6c7aa); /* 20 */</span><br><span class="line">    GG(a, b, c, d, x[5], 5, 0xd62f105d); /* 21 */</span><br><span class="line">    GG(d, a, b, c, x[10], 9, 0x2441453); /* 22 */</span><br><span class="line">    GG(c, d, a, b, x[15], 14, 0xd8a1e681); /* 23 */</span><br><span class="line">    GG(b, c, d, a, x[4], 20, 0xe7d3fbc8); /* 24 */</span><br><span class="line">    GG(a, b, c, d, x[9], 5, 0x21e1cde6); /* 25 */</span><br><span class="line">    GG(d, a, b, c, x[14], 9, 0xc33707d6); /* 26 */</span><br><span class="line">    GG(c, d, a, b, x[3], 14, 0xf4d50d87); /* 27 */</span><br><span class="line">    GG(b, c, d, a, x[8], 20, 0x455a14ed); /* 28 */</span><br><span class="line">    GG(a, b, c, d, x[13], 5, 0xa9e3e905); /* 29 */</span><br><span class="line">    GG(d, a, b, c, x[2], 9, 0xfcefa3f8); /* 30 */</span><br><span class="line">    GG(c, d, a, b, x[7], 14, 0x676f02d9); /* 31 */</span><br><span class="line">    GG(b, c, d, a, x[12], 20, 0x8d2a4c8a); /* 32 */</span><br><span class="line"> </span><br><span class="line">    /* Round 3 */</span><br><span class="line">    HH(a, b, c, d, x[5], 4, 0xfffa3942); /* 33 */</span><br><span class="line">    HH(d, a, b, c, x[8], 11, 0x8771f681); /* 34 */</span><br><span class="line">    HH(c, d, a, b, x[11], 16, 0x6d9d6122); /* 35 */</span><br><span class="line">    HH(b, c, d, a, x[14], 23, 0xfde5380c); /* 36 */</span><br><span class="line">    HH(a, b, c, d, x[1], 4, 0xa4beea44); /* 37 */</span><br><span class="line">    HH(d, a, b, c, x[4], 11, 0x4bdecfa9); /* 38 */</span><br><span class="line">    HH(c, d, a, b, x[7], 16, 0xf6bb4b60); /* 39 */</span><br><span class="line">    HH(b, c, d, a, x[10], 23, 0xbebfbc70); /* 40 */</span><br><span class="line">    HH(a, b, c, d, x[13], 4, 0x289b7ec6); /* 41 */</span><br><span class="line">    HH(d, a, b, c, x[0], 11, 0xeaa127fa); /* 42 */</span><br><span class="line">    HH(c, d, a, b, x[3], 16, 0xd4ef3085); /* 43 */</span><br><span class="line">    HH(b, c, d, a, x[6], 23, 0x4881d05); /* 44 */</span><br><span class="line">    HH(a, b, c, d, x[9], 4, 0xd9d4d039); /* 45 */</span><br><span class="line">    HH(d, a, b, c, x[12], 11, 0xe6db99e5); /* 46 */</span><br><span class="line">    HH(c, d, a, b, x[15], 16, 0x1fa27cf8); /* 47 */</span><br><span class="line">    HH(b, c, d, a, x[2], 23, 0xc4ac5665); /* 48 */</span><br><span class="line"> </span><br><span class="line">    /* Round 4 */</span><br><span class="line">    II(a, b, c, d, x[0], 6, 0xf4292244); /* 49 */</span><br><span class="line">    II(d, a, b, c, x[7], 10, 0x432aff97); /* 50 */</span><br><span class="line">    II(c, d, a, b, x[14], 15, 0xab9423a7); /* 51 */</span><br><span class="line">    II(b, c, d, a, x[5], 21, 0xfc93a039); /* 52 */</span><br><span class="line">    II(a, b, c, d, x[12], 6, 0x655b59c3); /* 53 */</span><br><span class="line">    II(d, a, b, c, x[3], 10, 0x8f0ccc92); /* 54 */</span><br><span class="line">    II(c, d, a, b, x[10], 15, 0xffeff47d); /* 55 */</span><br><span class="line">    II(b, c, d, a, x[1], 21, 0x85845dd1); /* 56 */</span><br><span class="line">    II(a, b, c, d, x[8], 6, 0x6fa87e4f); /* 57 */</span><br><span class="line">    II(d, a, b, c, x[15], 10, 0xfe2ce6e0); /* 58 */</span><br><span class="line">    II(c, d, a, b, x[6], 15, 0xa3014314); /* 59 */</span><br><span class="line">    II(b, c, d, a, x[13], 21, 0x4e0811a1); /* 60 */</span><br><span class="line">    II(a, b, c, d, x[4], 6, 0xf7537e82); /* 61 */</span><br><span class="line">    II(d, a, b, c, x[11], 10, 0xbd3af235); /* 62 */</span><br><span class="line">    II(c, d, a, b, x[2], 15, 0x2ad7d2bb); /* 63 */</span><br><span class="line">    II(b, c, d, a, x[9], 21, 0xeb86d391); /* 64 */</span><br><span class="line">    state[0] += a;</span><br><span class="line">    state[1] += b;</span><br><span class="line">    state[2] += c;</span><br><span class="line">    state[3] += d;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    int i;</span><br><span class="line">    unsigned char encrypt[] = &quot;Administratar&quot;;//21232f297a57a5a743894a0e4a801fc3</span><br><span class="line">    unsigned char decrypt[16];</span><br><span class="line">    MD5_CTX md5;</span><br><span class="line">    MD5Init(&amp;md5);</span><br><span class="line">    MD5Update(&amp;md5, encrypt, strlen((char*) encrypt));</span><br><span class="line">    MD5Final(&amp;md5, decrypt);</span><br><span class="line">    printf(&quot;加密前:%s\n加密后:&quot;, encrypt);</span><br><span class="line">    for(i = 0; i &lt; 16; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        printf(&quot;%02x&quot;, decrypt[i]);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    getchar();</span><br><span class="line"> </span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="特征-1"><a href="#特征-1" class="headerlink" title="特征"></a>特征</h3><p>1.四个固定的常量</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412121953429.png" alt="image-20241212195337323"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412121954790.png" alt="image-20241212195415767"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412121956217.png" alt="image-20241212195636114"></p>
-<p>2.不论输入多少，输出为16位</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxx（input,sizeof（input)-1,digest）</span><br></pre></td></tr></table></figure>
-
-<p>看到这样的函数，先在这个位置打断点，步过只有前十六个字节变化</p>
-<p>输出一定为32个字符，十六进制数  </p>
-<p>eg:5eb63bbbe01eeed093cb22bb8f5acdc3</p>
-<p>3.<img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412122007969.png" alt="image-20241212200711875"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412122007421.png" alt="image-20241212200728387"></p>
-<p>爆破：Hashcat   ， 脚本</p>
-<p>Hashcat   命令  hashcat -h   </p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412241512449.png" alt="image-20241224151208272"></p>
-<p>eg: <code>hashcat -m 0 202cb962ac59075b964b07152d234b70 -a 3 ?d?d?d</code></p>
-<h1 id="RSA"><a href="#RSA" class="headerlink" title="RSA"></a>RSA</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_46145027/article/details/125047313">RSA</a></p>
-<p>明文  m：就是待加密的文本啦，一般也就是我们的flag。</p>
-<p>密文 C：加密完成后的密文，一般题目会给你，我们要做的就是根据密文解密出明文。</p>
-<p>公钥 e（加密钥）：用来加密的密钥，是一个整数，是公开的。</p>
-<p>两个大素数 p,q：一般不会告诉你。我们选取两个大素数并计算它们的乘积，得到n&#x3D;p*q。后面会用p,q,n来加密解密。由于p,q非常大，想要对n进行因式分解得到p，q非常困难，这也确保了RSA的安全性。</p>
-<p>私钥 d（解密钥）：用来解密，d满足e*d mod (p-1)(q-1)&#x3D;1，所以我们只要知道e和p,q就可以把d算出来。</p>
-<p>加密过程：</p>
-<p>解密过程：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412251930792.png" alt="image-20241225193024667"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412251930796.png" alt="image-20241225193039715"></p>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><h3 id="1-因式分解："><a href="#1-因式分解：" class="headerlink" title="1.因式分解："></a>1.因式分解：</h3><p>适用情况：n已知且可因式分解</p>
-<h3 id="factordb-com"><a href="#factordb-com" class="headerlink" title="factordb.com"></a><a target="_blank" rel="noopener" href="http://www.factordb.com/">factordb.com</a></h3><h3 id="2-爆破k（e很小）"><a href="#2-爆破k（e很小）" class="headerlink" title="2.爆破k（e很小）"></a>2.爆破k（e很小）</h3><p>适用情况：n很大但是e很小，一般e&#x3D;3</p>
-<p>n很大时就不能因式分解了，但因为m &#x3D; c + n*k，我们可<br>以对k进行爆破，直到c－kn可以开根，借此得到m</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import gmpy2</span><br><span class="line">from Crypto.Util.number import *</span><br><span class="line"> </span><br><span class="line">def de(c, e, n):</span><br><span class="line">    k = 0</span><br><span class="line">    while True:</span><br><span class="line">        m = c + n*k</span><br><span class="line">        result, flag = gmpy2.iroot(m, e)</span><br><span class="line">        if flag == True:</span><br><span class="line">            return result</span><br><span class="line">        k += 1</span><br><span class="line">            </span><br><span class="line">       </span><br><span class="line">e= 3</span><br><span class="line">n= 0x52d483c27cd806550fbe0e37a61af2e7cf5e0efb723dfc81174c918a27627779b21fa3c851e9e94188eaee3d5cd6f752406a43fbecb53e80836ff1e185d3ccd7782ea846c2e91a7b0808986666e0bdadbfb7bdd65670a589a4d2478e9adcafe97c6ee23614bcb2ecc23580f4d2e3cc1ecfec25c50da4bc754dde6c8bfd8d1fc16956c74d8e9196046a01dc9f3024e11461c294f29d7421140732fedacac97b8fe50999117d27943c953f18c4ff4f8c258d839764078d4b6ef6e8591e0ff5563b31a39e6374d0d41c8c46921c25e5904a817ef8e39e5c9b71225a83269693e0b7e3218fc5e5a1e8412ba16e588b3d6ac536dce39fcdfce81eec79979ea6872793</span><br><span class="line">c= 0x10652cdfaa6b63f6d7bd1109da08181e500e5643f5b240a9024bfa84d5f2cac9310562978347bb232d63e7289283871efab83d84ff5a7b64a94a79d34cfbd4ef121723ba1f663e514f83f6f01492b4e13e1bb4296d96ea5a353d3bf2edd2f449c03c4a3e995237985a596908adc741f32365</span><br><span class="line"> </span><br><span class="line">m=de(c,e,n)</span><br><span class="line">print(m)</span><br><span class="line"></span><br><span class="line">print(long_to_bytes(m))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">计算 8 的 3 次方根</span><br><span class="line">result, flag = gmpy2.iroot(8, 3)</span><br><span class="line">print(result)  # 输出: 2</span><br><span class="line">print(flag)  # 输出: True</span><br><span class="line"></span><br><span class="line">计算 10 的 2 次方根</span><br><span class="line">result, flag = gmpy2.iroot(10, 2)</span><br><span class="line">print(result)  # 输出: 3</span><br><span class="line">print(flag)  # 输出: False  # 3 是最接近 10 的平方根</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-dp-dq"><a href="#3-dp-dq" class="headerlink" title="3.dp dq"></a>3.dp dq</h3><p>适用情况：dp,dq同时泄露</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dp = d mod (p-1)</span><br><span class="line">dq = d mod (q-1)</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">m1 = c^dp mod p</span><br><span class="line"></span><br><span class="line">m2 = c^dq mod q</span><br><span class="line"></span><br><span class="line">m = (((m1-m2)*I)%p)*q+m2</span><br><span class="line"></span><br><span class="line">其中I为对pq求逆元</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
+     
+    </ul>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/12/09/%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/" data-id="cm55bqibp0001b8v6d9qffl5q" data-title="加密方法" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
+    <div class="archives"><a href="/archives">
+      <svg class="i-archive" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M4 10 L4 28 28 28 28 10 M2 4 L2 10 30 10 30 4 Z M12 15 L20 15"></path>
+      </svg>
+    </a></div>
   </div>
-  
-</article>
-
-
-
-  
-    <article id="post-elf动调-SMC" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/12/05/elf%E5%8A%A8%E8%B0%83-SMC/" class="article-date">
-  <time class="dt-published" datetime="2024-12-05T15:35:06.000Z" itemprop="datePublished">2024-12-05</time>
-</a>
-    
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/12/05/elf%E5%8A%A8%E8%B0%83-SMC/">elf动调+SMC</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="elf动调"><a href="#elf动调" class="headerlink" title="elf动调"></a>elf动调</h1><p>首先去到ida的安装目录找到<strong>dbgsrv</strong>文件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412052337213.png" alt="image-20241205233704123"></p>
-<p>在该目录下找到两个文件（分别是32位和64位的，elf文件的话一般都是64位，就用<strong>linux_server64</strong>示例）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412052343458.png"></p>
-<p>首先将<strong>linux_server64</strong>和你想要动调的elf文件拖入虚拟机中</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412052352434.png" alt="image-20241205235201741"></p>
-<p>直接在桌面右键打开终端，运行这个文件<code>./linux_server64</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412060007772.png" alt="PixPin_2024-12-06_00-00-32"></p>
-<p>出现这样的就已经可以了。</p>
-<p>接下来回到windows，使用对应版本的IDA打开那个要调试的文件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412060010819.png" alt="image-20241206001043589"></p>
-<p><strong>Debugger -&gt;select Debugger</strong> </p>
-<p>选择<strong>Remote linux Debugger</strong></p>
-<p>下一步再次点击<strong>Debugger</strong></p>
-<p>选择<strong>process options</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412060015268.png" alt="image-20241206001540209"><strong>Application</strong>和<strong>Input file</strong>填入要调试文件在虚拟机中的位置，<strong>Directory</strong>随意，就填这个对应的目录即可</p>
-<p><strong>Hostname</strong>要填入虚拟机的ip(在虚拟机的终端中用<strong>ip addr</strong>指令可得到虚拟机ip)</p>
-<p>&#x3D;&#x3D;之后就可以指出动态调试&#x3D;&#x3D;</p>
-<h1 id="smc"><a href="#smc" class="headerlink" title="smc"></a>smc</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>即<strong>Self Modifying Code</strong>，动态代码加密技术，指通过修改代码或数据，阻止别人直接静态分析，然后在动态运行程序时对代码进行解密，达到程序正常运行的效果。</p>
-<p> 是在编译可执行文件时，将需要加密的代码区段（如函数、代码块） 单独编译成一段，并将其标记为可读，可写，不可执行，然后通过某种方法在程序运行的时候将其解密为可执行代码，并将其标记为可读、可执行、不可写。这样就不能直接在内存里面找到加密的代码，从而无法执行或修改加密的代码。</p>
-<h2 id="识别"><a href="#识别" class="headerlink" title="识别"></a>识别</h2><p>SMC的实现是需要对目标内存进行修改的，.text一般是没有写权限的。</p>
-<p>那么就需要拥有修改目标内存的权限：</p>
-<p>在 <strong>linux</strong>系统 中，可以通过<code>mprotect</code>函数 修改目标内存的权限<br>在 <strong>Windows</strong>系统 中，<code>VirtualProtect</code>函数 实现内存权限的修改<br>因此也可以在IDA的导入表<strong>imports</strong>中观察是否调用这两个函数来判断是否进行了SMC</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061206214.png" alt="image-20241206120653134"></p>
-<p>如即为SMC的代表</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061209205.png" alt="image-20241206120944007"></p>
-<p>形式为<img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061228489.png" alt="image-20241206122833465"></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">VirtualProtect(sub_4012B0, 0x1000u, 0x40u, &amp;flOldProtect);</span><br><span class="line">  <span class="keyword">for</span> ( k = <span class="number">0</span>; k &lt; <span class="number">58</span>; ++k )</span><br><span class="line">    *((_BYTE *)sub_4012B0 + k) ^= 0x23u;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p><code>sub_4012B0</code>：这是一个指向内存中某个位置的指针，通常指向你想要修改保护属性的内存区域的起始地址。这里的<code>sub_4012B0</code>是一个函数代码段的地址。</p>
-</li>
-<li><p><code>0x1000u</code>：这是你想要修改保护属性的内存区域的大小，单位是字节。<code>0x1000</code>等于4096字节，也就是4KB。<code>u</code>表示这是一个无符号整数（unsigned）。</p>
-</li>
-<li><p><code>0x40u</code>：这是新的保护属性标志。在Windows中，内存保护属性是通过一系列的标志来定义的。<code>0x40</code>通常对应于<code>PAGE_EXECUTE_READWRITE</code>，意味着这个内存区域将同时是可执行的、可读的、可写的。</p>
-</li>
-<li><p><code>&amp;flOldProtect</code>：这是一个指向变量的指针，该变量将接收修改前的保护属性标志。<code>flOldProtect</code>是一个变量，用于存储调用<code>VirtualProtect</code>之前该内存区域的保护属性。</p>
-<p>&#x3D;&#x3D;简单来说，这行代码的作用是：将<strong>sub_4012B0</strong>地址开始的4KB内存区域的保护属性修改为可执行、可读、可写，并将修改前的保护属性保存在<strong>flOldProtect</strong>变量中，接着将代码加密为ida无法反汇编的形式&#x3D;&#x3D;</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">VirtualProtect(sub_4012B0, 0x1000u, flOldProtect, 0);</span><br></pre></td></tr></table></figure>
-
-<p> &#x3D;&#x3D;将 sub_4012B0 地址开始的 4KB 内存区域的保护属性恢复为之前不可更改的状态&#x3D;&#x3D;</p>
-<p>如果你看到反编译失败且其在汇编代码中夹杂大片的数据 </p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061656405.png" alt="image-20241206165640283"></p>
-</li>
-</ul>
-<h3 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h3><p>常见的抵御静态分析技术：</p>
-<p>1.花指令</p>
-<p>2.smc</p>
-<p>3.信息隐藏</p>
-<p>4.代码与数据结合</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061240990.png" alt="image-20241206124049880"></p>
-<p><strong>SMC</strong>最容易的，因为在程序运行的某一时刻，它一定是解密完成的，所以使用动态分析运行到这一时刻即可过掉保护；</p>
-<p>但有时程序中会有一些阻止动态调试的程序，如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">int sub_401100()</span><br><span class="line">&#123;</span><br><span class="line">  int result; // eax</span><br><span class="line"></span><br><span class="line">  result = IsDebuggerPresent();</span><br><span class="line">  if ( result == 1 )</span><br><span class="line">    return MessageBoxA(0, &quot;Being Debugger&quot;, &quot;The_Itach1&quot;, 0);</span><br><span class="line">  return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这时候就需要写脚本来解决</p>
-<h2 id="X86知识"><a href="#X86知识" class="headerlink" title="X86知识"></a>X86知识</h2><p>内存以字节为单位。<br>一个字节是8 个比特位，可以表示 2^8 &#x3D; 256 个数。大小为 8 位的二进制数是从 0 开始到 255 这 256<br>个值中的一个。<br>两个字节被称为一个字（WORD），两个字被称为四个字节（32位）也即双字（DWORD），四字<br>（QWORD）是八个字节（64位）。</p>
-<h2 id="脚本解决"><a href="#脚本解决" class="headerlink" title="脚本解决"></a>脚本解决</h2><p>先找到被加密的代码的起始位置并选中</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061636078.png" alt="image-20241206163632909"></p>
-<p>再引用你的脚本</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061637804.png" alt="image-20241206163720765"></p>
-<p>之后按<strong>U</strong>解构函数</p>
-<p><strong>C</strong>将字符转为代码（注意要从函数头选到函数ret结束）</p>
-<p><strong>P</strong>重构函数</p>
-<p>之后按<strong>F5</strong>就可以正常反编译</p>
-<h2 id="ida动调"><a href="#ida动调" class="headerlink" title="ida动调"></a>ida动调</h2><h3 id="例1"><a href="#例1" class="headerlink" title="例1"></a>例1</h3><p>选中要转为代码的字符（要从函数头选到函数ret结束）</p>
-<p>起始点如下</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061717370.png" alt="image-20241206171714252"></p>
-<p>之后按<strong>C</strong>转为代码</p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061719722.png" alt="image-20241206171906702"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zzh202408064212/PiCTURE/202412061719041.png" alt="image-20241206171925004"></p>
-<p>再按<strong>F5</strong>反汇编就得到了代码</p>
-<h3 id="例2"><a href="#例2" class="headerlink" title="例2"></a>例2</h3>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/12/05/elf%E5%8A%A8%E8%B0%83-SMC/" data-id="cm4cji5iy0000jwv6a1iu97xf" data-title="elf动调+SMC" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-控制台命令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/" class="article-date">
-  <time class="dt-published" datetime="2024-11-28T13:24:58.000Z" itemprop="datePublished">2024-11-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/">控制台命令</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.sudo  +命令:以超级用户身份执行</p>
-<p>2.subl +文件名:可以直接打开 Sublime Text 编辑器，并指定要编辑的文件或文件夹</p>
-<p><code>   </code></p>
-<p><code>subl myproject/</code>：打开名为 “myproject” 的文件夹。</p>
-<p><code>subl -n main.c</code>：在新的窗口中打开 “main.c” 文件。</p>
-<p><code>subl -r file1.txt:file2.txt</code>：在新的窗口中打开两个文件，并以行的方式对齐显示。</p>
-<p>3.gcc +(-m32)文件名 -o+自己定义的文件名若（没有则默认为a.out)：生成可执行文件</p>
-<p>(-m32)使生成的文件是32 位的</p>
-<p>4.ls -l +文件名：显示文件的部分信息</p>
-<p>   file+文件名</p>
-<ol>
-<li>​    .&#x2F;+文件名：执行该文件</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/" data-id="cm41cel0700018wv628pu83tw" data-title="控制台命令" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/16/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2024-10-16T12:34:22.673Z" itemprop="datePublished">2024-10-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/16/hello-world/" data-id="cm2j26ud50000mwv6cwrldwtn" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2024/12/12/%E8%8A%B1%E6%8C%87%E4%BB%A4/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2024/12/10/PYC/">PYC</a>
-          </li>
-        
-          <li>
-            <a href="/2024/12/09/%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/">加密方法</a>
-          </li>
-        
-          <li>
-            <a href="/2024/12/05/elf%E5%8A%A8%E8%B0%83-SMC/">elf动调+SMC</a>
-          </li>
-        
-          <li>
-            <a href="/2024/11/28/%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%91%BD%E4%BB%A4/">控制台命令</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2024 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
 </nav>
-    
 
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
+<ul class="posts">
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    
+<li class="post-item">
+  
+  
+    <h1 class="index-title">
+        <a href="/2024/12/12/花指令/">
+            
+        </a>
+    </h1>
+  
 
 
+  <div class="excerpt">
+  
+    定义在真实代码中插入一些垃圾代码的同时保证原有程序的正确执行, 而程序无法很好地反编译,使我们难以理解程序内容。
+原理&#x3D;&#x3D;线性反编译&#x3D;&#x3D;(理解花指令的重点)反编译器的工作原理是，从exe的入口Addr
+  
+  <a href="/2024/12/12/花指令/">
+    more
+  </a>
+  </div>
+  <div class="index-meta">
+    <time datetime="2024-12-12T10:52:59.000Z" itemprop="datePublished">
+  <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
+  </svg>
+  &nbsp;
+  2024-12-12
+</time>
 
-
-<script src="/js/script.js"></script>
 
 
 
 
 
   </div>
+</li>
+<hr>
+
+
+
+
+
+  
+    
+<li class="post-item">
+  
+  
+    <h1 class="index-title">
+        <a href="/2024/12/10/PYC/">
+            PYC
+        </a>
+    </h1>
+  
+
+
+  <div class="excerpt">
+  
+    生成PYC文件12from py_compile import *compile(&quot;zaho .py&quot;)
+
+zaho .py为文件名
+  
+  <a href="/2024/12/10/PYC/">
+    more
+  </a>
+  </div>
+  <div class="index-meta">
+    <time datetime="2024-12-10T08:21:52.000Z" itemprop="datePublished">
+  <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
+  </svg>
+  &nbsp;
+  2024-12-10
+</time>
+
+
+
+
+
+
+  </div>
+</li>
+<hr>
+
+
+
+
+
+  
+    
+<li class="post-item">
+  
+  
+    <h1 class="index-title">
+        <a href="/2024/12/09/加密方法/">
+            加密方法
+        </a>
+    </h1>
+  
+
+
+  <div class="excerpt">
+  
+    Basebase16将给定的字符串根据Ascll标转化成二进制–&gt;每四个一组重新划分–&gt;得到一个新的Ascll数值–&gt;再转化为16进制
+&#x3D;&#x3D;数字0-9和字母A-F&#x3D;&#x3D;
+编码结束的结果
+  
+  <a href="/2024/12/09/加密方法/">
+    more
+  </a>
+  </div>
+  <div class="index-meta">
+    <time datetime="2024-12-09T08:45:30.000Z" itemprop="datePublished">
+  <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
+  </svg>
+  &nbsp;
+  2024-12-09
+</time>
+
+
+
+
+
+
+  </div>
+</li>
+<hr>
+
+
+
+
+
+  
+    
+<li class="post-item">
+  
+  
+    <h1 class="index-title">
+        <a href="/2024/12/05/elf动调-SMC/">
+            elf动调+SMC
+        </a>
+    </h1>
+  
+
+
+  <div class="excerpt">
+  
+    elf动调首先去到ida的安装目录找到dbgsrv文件
+
+在该目录下找到两个文件（分别是32位和64位的，elf文件的话一般都是64位，就用linux_server64示例）
+
+首先将linux_server64和你想要动调的elf文件拖入
+  
+  <a href="/2024/12/05/elf动调-SMC/">
+    more
+  </a>
+  </div>
+  <div class="index-meta">
+    <time datetime="2024-12-05T15:35:06.000Z" itemprop="datePublished">
+  <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
+  </svg>
+  &nbsp;
+  2024-12-05
+</time>
+
+
+
+
+
+
+  </div>
+</li>
+<hr>
+
+
+
+
+
+  
+    
+<li class="post-item">
+  
+  
+    <h1 class="index-title">
+        <a href="/2024/11/28/控制台命令/">
+            控制台命令
+        </a>
+    </h1>
+  
+
+
+  <div class="excerpt">
+  
+    1.sudo  +命令:以超级用户身份执行
+2.subl +文件名:可以直接打开 Sublime Text 编辑器，并指定要编辑的文件或文件夹
+   
+subl myproject/：打开名为 “myproject” 的文件夹。
+subl 
+  
+  <a href="/2024/11/28/控制台命令/">
+    more
+  </a>
+  </div>
+  <div class="index-meta">
+    <time datetime="2024-11-28T13:24:58.000Z" itemprop="datePublished">
+  <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
+  </svg>
+  &nbsp;
+  2024-11-28
+</time>
+
+
+
+
+
+
+  </div>
+</li>
+<hr>
+
+
+
+
+
+  
+    
+<li class="post-item">
+  
+  
+    <h1 class="index-title">
+        <a href="/2024/10/16/hello-world/">
+            Hello World
+        </a>
+    </h1>
+  
+
+
+  <div class="excerpt">
+  
+    Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+  
+  <a href="/2024/10/16/hello-world/">
+    more
+  </a>
+  </div>
+  <div class="index-meta">
+    <time datetime="2024-10-16T12:34:22.673Z" itemprop="datePublished">
+  <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
+  </svg>
+  &nbsp;
+  2024-10-16
+</time>
+
+
+
+
+
+
+  </div>
+</li>
+<hr>
+
+
+
+
+
+  
+</ul>
+<ul class="pager">
+    <span class="page-number current">1</span>
+</ul>
+
+
+    </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot">
+    <div class="firstrow">
+        <a href="#top" target="_self">
+        <svg class="i-caret-right" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M10 30 L26 16 10 2 Z"></path>
+        </svg>
+        </a>
+        © XXX 2016-2020
+    </div>
+    <div class="secondrow">
+        <a target="_blank" rel="noopener" href="https://github.com/gaoryrt/hexo-theme-pln">
+        Theme Pln
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script type="text/javascript">
+
+// disqus scripts
+
+
+// dropdown scripts
+function $(s) {
+    return document.querySelector(s)
+  }
+
+  function $$(s) {
+    return document.querySelectorAll(s)
+  }
+  var dropDownElArr = $$('.dropdown')
+  for (var i = 0; i < dropDownElArr.length; i += 1) {
+    dropDownElArr[i].addEventListener('click', function(event) {
+      var content = this.querySelector('.dropdown-content')
+      event.stopPropagation()
+      if (content.className.indexOf('open') < 0) {
+        content.classList.add('open')
+      } else {
+        content.classList.remove('open')
+      }
+    })
+  }
+  document.body.addEventListener('click', function() {
+    var dropDownContentElArr = $$('.dropdown-content')
+    for (var i = 0; i < dropDownContentElArr.length; i += 1) {
+      dropDownContentElArr[i].classList.remove('open')
+    }
+  })
+
+  // smooth scroll
+  $$('a[href^="#"]').forEach(e=>{
+    e.addEventListener("click", function(e) {
+      e.preventDefault();
+      var t = this.getAttribute("href").substr(1);
+      $(`[id='${decodeURIComponent(t)}']`).scrollIntoView({
+        behavior: "smooth"
+      }),
+      t === "top" ? history.replaceState(null, null, " ") : history.pushState(null, null, `#${t}`)
+    })
+  })
+
+// search
+var searchEl = document.querySelector("#local-search-input")
+if (searchEl) searchEl.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') {
+    var s = e.target.value
+    window.open('//www.google.com/search?q=site:http://example.com%20' + s, '_blank').focus()
+  }
+})
+
+</script>
+
 </body>
 </html>
